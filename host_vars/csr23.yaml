@@ -8,3 +8,6 @@ OSPF:
   - interface: "GigabitEthernet3.888"
     pid: "1"
     area: "0"
+  - interface: "GigabitEthernet3.123"
+    pid: "1"
+    area: "0"
