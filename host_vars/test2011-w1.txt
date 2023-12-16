@@ -1,0 +1,1000 @@
+  628  head group_vars/*.yml
+  629  cat ~/ansible_vpf.txt 
+  630  ansible-vault view group_vars/all/vault.yml 
+  631  ls
+  632  ansible-vault create vaults1.yml
+  633  ansible-vault view vaults1.yml 
+  634  mv vaults1.yml group_vars/all/
+  635  cd ../../../
+  636  cd 04/demos/m4/
+  637  ansible-vault view netbox_inv.yml 
+  638  cd ../../
+  639  cd ..
+  640  ls
+  641  cp 04/ nauto-04
+  642  cp 04 nauto-04
+  643  mkdir nauto-04
+  644  cp 04 nauto-04/
+  645  cp -r 04 nauto-04/
+  646  cd nauto-04/
+  647  cd 04/demos/m4/
+  648  cd
+  649  history 
+  650  touch nauconf.txt
+  651  code nauconf.txt 
+  652  ls
+  653  cd ..
+  654  ls
+  655  cd ..
+  656  source sshinfla/bin/activate
+  657  cd sshinfla/SSH2Influx/
+  658  ls
+  659  cp example-optionsconfig.yaml optionsconfig.yaml
+  660  ls
+  661  cd environments/
+  662  ls
+  663  mkdir sshinfla
+  664  cd amva/
+  665  ls
+  666  cd ..
+  667  python3 -m venv sshinfla
+  668  ls
+  669  cd sshinfla/
+  670  ls
+  671  cd ..
+  672  cd sshinfla/
+  673  ls
+  674  ping 8.8.8.8
+  675  cd ..
+  676  cd sshinfla/
+  677  ls
+  678  git clone https://github.com/jasoncdavis/SSH2Influx.git
+  679  cd ..
+  680  source sshinfla/bin/activate
+  681  cd sshinfla/
+  682  cd SSH2Influx/
+  683  l
+  684  ls
+  685  cd ..
+  686  code SSH2Influx/
+  687  pip install -r requirements.txt
+  688  cd SSH2Influx/
+  689  pip3 install -r requirements.txt
+  690  lsd
+  691  ls
+  692  cd ..
+  693  ls
+  694  mkdir inf-1
+  695  cd inf-1/
+  696  wget https://dl.influxdata.com/influxdb/releases/influxdb2-2.7.1-linux-arm64.tar.gz
+  697  ll
+  698  tar xvzf path/to/influxdb2-2.7.1-linux-arm64.tar.gz
+  699  ls
+  700  tar xvzf influxdb2-2.7.1-linux-arm64.tar.gz 
+  701  cd /usr/local/bin/
+  702  ls
+  703  cd ..
+  704  cd
+  705  cd environments/sshinfla/inf-1/
+  706  ls
+  707  cd influxdb2_linux_arm64/
+  708  ls
+  709  cd ..
+  710  ls
+  711  cd influxdb2_linux_arm64/
+  712  ;ls
+  713  ls
+  714  cd ..
+  715  sudo cp influxdb2-2.7.1-linux-arm64/influxd /usr/local/bin/
+  716  ls
+  717  sudo cp influxdb2_linux_arm64/influxd /usr/local/bin/
+  718  cd influxdb2_linux_arm64/
+  719  ls
+  720  influxd 
+  721  ./influxd 
+  722  cd /usr/local/bin/
+  723  ls
+  724  ./influxd 
+  725  /.influx
+  726  /.influxd
+  727  influxd 
+  728  ./influxd 
+  729  cd 
+  730  cd environments/sshinfla/inf-1/influxdb2_linux_arm64/
+  731  ./influxd 
+  732  sudo ./influxd 
+  733  sudo service influxdb start
+  734  ls
+  735  influxd 
+  736  influxd
+  737  cd ..
+  738  sudo cp influxdb2-2.7.1-linux-arm64/influxd /usr/local/bin/
+  739  cd influxdb2_linux_arm64/
+  740  sudo cp influxdb2-2.7.1-linux-arm64/influxd /usr/local/bin/
+  741  cd ..
+  742  sudo cp influxdb2_linux_arm64/influxd /usr/local/bin/
+  743  ./usr/local/bin/influxd
+  744  cd /usr/local/bin/influxd
+  745  cd /usr/local/bin/
+  746  ls
+  747  influxd 
+  748  ./influxd 
+  749  cd 
+  750  cd environments/sshinfla/
+  751  cd inf-1/
+  752  ls
+  753  cd ..
+  754  rm --help
+  755  rm -fr inf-1
+  756  ls
+  757  mkdir fluxdb-1
+  758  cd fluxdb-1/
+  759  ls
+  760  wget https://dl.influxdata.com/influxdb/releases/influxdb2-2.7.1-linux-amd64.tar.gz
+  761  tar xvzf influxdb2-2.7.1-linux-amd64.tar.gz influxdb2_linux_amd64/
+  762  ls
+  763  sudo cp influxdb2-2.7.1-linux-amd64/influxd /usr/local/bin/
+  764  ls
+  765  cd influxdb2_linux_amd64/
+  766  ls
+  767  influxd 
+  768  ./influxd 
+  769  cd ..
+  770  sudo cp influxdb2_linux_amd64/influxd /usr/local/bin/
+  771  cd /usr/local/bin/
+  772  ls
+  773  ./influxd 
+  774  cd environments/
+  775  ls
+  776  source sshinfla/bin/activate
+  777  clear
+  778  cd sshinfla/
+  779  mkdir graf-1
+  780  cd graf-1/
+  781  sudo apt-get install -y apt-transport-https software-properties-common wget
+  782  sudo mkdir -p /etc/apt/keyrings/
+  783  wget -q -O - https://apt.grafana.com/gpg.key | gpg --dearmor | sudo tee /etc/apt/keyrings/grafana.gpg > /dev/null
+  784  echo "deb [signed-by=/etc/apt/keyrings/grafana.gpg] https://apt.grafana.com stable main" | sudo tee -a /etc/apt/sources.list.d/grafana.list
+  785  sudo apt-get update
+  786  sudo apt-get install grafana
+  787  sudo apt-get install grafana-enterprise
+  788  udo /bin/systemctl start grafana-server
+  789  ls
+  790  ll
+  791  ls
+  792  cd ..
+  793  ls
+  794  sudo /bin/systemctl start grafana-server
+  795  cat /etc/grafana/grafana.ini 
+  796  sudo cat /etc/grafana/grafana.ini 
+  797  ls
+  798  cd SSH2Influx/
+  799  ls
+  800  python3 SSH2Influx.py  -p examples/
+  801  cd examples/
+  802  ls
+  803  cd ..
+  804  python3 SSH2Influx.py -p examples/sample-single.yml
+  805  python3 SSH2Influx.py -p examples/sample-single.yml -t 4 -f 30
+  806  ssh admin@192.168.2.89
+  807  ssh admin@192.168.2.90
+  808  python3 SSH2Influx.py -p examples/sample-single.yml -t 4 -f 30
+  809  ls
+  810  cd sshinfla/
+  811  ls
+  812  cd fluxdb-1/
+  813  ls
+  814  cd influxdb2_linux_amd64/
+  815  ls
+  816  cd 
+  817  cd ..
+  818  cd
+  819  cd environments/sshinfla/
+  820  ls
+  821  cd ..
+  822  source sshinfla/bin/activate
+  823  cd sshinfla/
+  824  ls
+  825  cd SSH2Influx/
+  826  ls
+  827  cd ..
+  828  ls
+  829  cd graf-1/
+  830  ls
+  831  cd ..
+  832  ls
+  833  cd fluxdb-1/
+  834  ls
+  835  cd influxdb2_linux_amd64/
+  836  ls
+  837  cd ..
+  838  find / .ini
+  839  cd
+  840  cd environments/sshinfla/fluxdb-1/influxdb2_linux_amd64/
+  841  ls
+  842  cd ..
+  843  ls
+  844  cd ..
+  845  ls
+  846  cd sshinfla/
+  847  ls
+  848  mkdir teleg-1
+  849  cd teleg-1/
+  850  wget -q https://repos.influxdata.com/influxdata-archive_compat.key
+  851  ll
+  852  influxdata-archive_compat.key GPG fingerprint:
+  853  echo '393e8779c89ac8d958f81f942f9ad7fb82a25e133faddaf92e15b16e6ac9ce4c influxdata-archive_compat.key' | sha256sum -c && cat influxdata-archive_compat.key | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/influxdata-archive_compat.gpg > /dev/null
+  854  echo 'deb [signed-by=/etc/apt/trusted.gpg.d/influxdata-archive_compat.gpg] https://repos.influxdata.com/debian stable main' | sudo tee /etc/apt/sources.list.d/influxdata.list
+  855  sudo apt-get update && sudo apt-get install telegraf
+  856  ll
+  857  telegraf config > telegraf.conf
+  858  ls
+  859  cat telegraf.conf 
+  860  ls
+  861  cd ..
+  862  cd /etc/telegraf/
+  863  ls
+  864  code telegraf.conf
+  865  systemctl start telegraf
+  866  cd
+  867  systemctl start telegraf
+  868  systemctl status telegraf.service
+  869  systemctl start telegraf.service
+  870  cd environments/sshinfla/teleg-1/
+  871  ls
+  872  systemctl start telegraf
+  873  sudo systemctl status telegraf.service
+  874  sudo systemctl start telegraf
+  875  systemctl reload telegraf.service
+  876  journalctl -eu telegraf .
+  877  journalctl -eu telegraf 
+  878  telegraf config > ~/telegraf.conf
+  879  telegraf --config ~/telegraf.conf
+  880  systemctl start telegraf
+  881  ls
+  882  cd ..
+  883  ls
+  884  rm teleg-1/
+  885  rm -fr teleg-1/
+  886  influx telegrafs rm -i 12ab34de56fg78hi
+  887  influx telegrafs rm
+  888  sudo apt-get update
+  889  ls
+  890  mkdir tele-1
+  891  cd tele-1/
+  892  wget -q https://repos.influxdata.com/influxdata-archive_compat.key
+  893  echo '393e8779c89ac8d958f81f942f9ad7fb82a25e133faddaf92e15b16e6ac9ce4c influxdata-archive_compat.key' | sha256sum -c && cat influxdata-archive_compat.key | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/influxdata-archive_compat.gpg > /dev/null
+  894  echo 'deb [signed-by=/etc/apt/trusted.gpg.d/influxdata-archive_compat.gpg] https://repos.influxdata.com/debian stable main' | sudo tee /etc/apt/sources.list.d/influxdata.list
+  895  sudo apt-get update && sudo apt-get install telegraf
+  896  ls
+  897  systemctl start telegraf
+  898  docker pull telegraf
+  899  sudo docker pull telegraf
+  900  docker pull telegraf:alpine
+  901  systemctl start telegraf
+  902  systemctl status telegraf
+  903  systemctl reload telegraf
+  904  systemctl restart telegraf
+  905  ls
+  906  cd /etc/telegraf/
+  907  ls
+  908  code telegraf.conf
+  909  export INFLUX_TOKEN=EmPuI5Uhux4_2xcaL4jyPU9uew67IN_rL4ktFxZyYFZDfXjlkQaBIJLdc1GMjTf9lu-ONDh1sU1sujdZYQs3sg==
+  910  telegraf --config http://0.0.0.0:8086/api/v2/telegrafs/0bd513a098079000
+  911  12985
+  912  export INFLUX_TOKEN=xAEw-YlARH5Ukxj8pg4qMhEG5I8VycRGwpgj-f9i1oAvnGivofBTWPEQbrSFNTwbImutpEEbvNqOCvA10L9eWQ==
+  913  telegraf --config http://0.0.0.0:8086/api/v2/telegrafs/0bd51d23a7479000
+  914  export INFLUX_TOKEN=UR-K6j0CbZQQk2SDMDJc3cCkUMYNv5hP1t_BWmIPxfBNPAxgANQDWkREbTo_jfmbd6O1bvfh4-vh9YAafa2MMw==
+  915  telegraf --config http://0.0.0.0:8086/api/v2/telegrafs/0bd53fd618c79000
+  916  ls
+  917  cd ..
+  918  ls
+  919  cd 
+  920  cd envir
+  921  cd environments/
+  922  ls
+  923  cd sshinfla/
+  924  ls
+  925  rm -fr fluxdb-1/
+  926  rm -fr tele-1/
+  927  rm -fr graf-1/
+  928  ls
+  929  deactivate 
+  930  ls
+  931  cd ..
+  932  source sshinfla/bin/activate
+  933  ls
+  934  cd sshinfla/
+  935  ls
+  936  mkdir influx11
+  937  cd influx11/
+  938  wget https://dl.influxdata.com/influxdb/releases/influxdb2-2.7.1-amd64.deb
+  939  ls
+  940  sudo dpkg -i influxdb2-2.7.1-amd64.deb
+  941  ls
+  942  ll
+  943  sudo service influxdb start
+  944  ls
+  945  cd sshinfla/
+  946  cd ..
+  947  source sshinfla/bin/activate
+  948  sudo service influxdb status
+  949  cd /usr/local/bin/
+  950  ls
+  951  cd ..
+  952  cd 
+  953  sudo service influxdb start
+  954  cd environments/sshinfla/
+  955  ls
+  956  cd .
+  957  cd ..
+  958  code sshinfla/
+  959  history 
+  960  cd /etc/telegraf/
+  961  ls
+  962  cat telegraf.
+  963  cat telegraf.conf
+  964  cd ..
+  965  cd 
+  966  cd environments/sshinfla/
+  967  ls
+  968  cd in
+  969  cd influx11/
+  970  ls
+  971  cd ..
+  972  cd sshinfla/
+  973  pip3 install influxdb-client
+  974  ls
+  975  cd ..
+  976  deactivate 
+  977  ls
+  978  cd /etc/grafana/
+  979  ls
+  980  cd ..
+  981  rm -R grafana/
+  982  rm -fr grafana/
+  983  sudo rm -fr grafana/
+  984  ls
+  985  cd influxdb/
+  986  ls
+  987  cd ..
+  988  sudo rm -fr influxdb/
+  989  sudo rm -fr telegraf/
+  990  cd
+  991  cd environments/
+  992  ls
+  993  rm -fr sshinfla/
+  994  ls
+  995  history 
+  996  python3 -m venv inflssh
+  997  ls
+  998  cd inflssh/
+  999  ls
+ 1000  git clone https://github.com/jasoncdavis/SSH2Influx.git
+ 1001  ls
+ 1002  cd .
+ 1003  cd ..
+ 1004  source inflssh/bin/activate
+ 1005  cd inflssh/SSH2Influx/
+ 1006  ls
+ 1007  pip install -r requirements.txt 
+ 1008  ls
+ 1009  cd ..
+ 1010  ls
+ 1011  cd ..
+ 1012  ls
+ 1013  cd inflssh/
+ 1014  ls
+ 1015  mkdir infdb1
+ 1016  cd infdb1/
+ 1017  ls
+ 1018  wget https://dl.influxdata.com/influxdb/releases/influxdb_1.8.10_amd64.deb
+ 1019  ls
+ 1020  sudo dpkg -i influxdb_1.8.10_amd64.deb
+ 1021  sudo apt-get purge --auto-remove influxdb
+ 1022  sudo dpkg -i influxdb_1.8.10_amd64.deb
+ 1023  sudo apt-get update
+ 1024  sudo apt-get purge --auto-remove influxdb
+ 1025  sudo apt-get update
+ 1026  sudo dpkg -i influxdb_1.8.10_amd64.deb
+ 1027  sudo systemctl stop influxdb
+ 1028  sudo apt-get purge --auto-remove influxdb
+ 1029  sudo dpkg -i influxdb_1.8.10_amd64.deb
+ 1030  cd /var/lib
+ 1031  ls
+ 1032  rm -fr influxdb/
+ 1033  sudo rm -fr influxdb/
+ 1034  sudo apt-get purge --auto-remove influxdb
+ 1035  cd ~/environments/inflssh/
+ 1036  ls
+ 1037  cd infdb1/
+ 1038  sudo systemctl stop influxdb
+ 1039  sudo apt-get purge --auto-remove influxdb
+ 1040  sudo apt-get update
+ 1041  sudo dpkg -i influxdb_1.8.10_amd64.deb
+ 1042  sudo dpkg -i influxdb_1.8.10_amd64.deb --install
+ 1043  yum remove influxdb
+ 1044  pkill -f influx  
+ 1045  sudo apt-get purge --auto-remove influxdb
+ 1046  cd /var/lib/influxdb/data
+ 1047  wget https://dl.influxdata.com/influxdb/releases/influxdb_1.8.10_amd64.deb
+ 1048  sudo dpkg -i influxdb_1.8.10_amd64.deb
+ 1049  deactivate 
+ 1050  source sshinfla/bin/activate
+ 1051  cd sshinfla/
+ 1052  ll
+ 1053  mkdir telegraf1
+ 1054  cd telegraf1/
+ 1055  mv ~/Downloads/telegraf-1.28.1_linux_amd64.tar.gz .
+ 1056  ls
+ 1057  tar xvzf telegraf-1.28.1_linux_amd64.tar.gz 
+ 1058  ls
+ 1059  cd telegraf-1.28.1/
+ 1060  ll
+ 1061  cd /usr/bin/
+ 1062  ls
+ 1063  ./telegraf --help
+ 1064  ./telegraf config > telegraf.conf
+ 1065  sudo ./telegraf config > telegraf.conf
+ 1066  ls
+ 1067  cat telegraf 
+ 1068  sudo -i
+ 1069  ll
+ 1070  cd environments/
+ 1071  ks
+ 1072  ls
+ 1073  cd ..
+ 1074  mkdir newinluxprof
+ 1075  cd ne
+ 1076  cd newinluxprof/
+ 1077  ls
+ 1078  apt update && apt upgrade --yes
+ 1079  sudo apt update && apt upgrade --yes
+ 1080  ps aux | grep -i apt
+ 1081  sudo fuser -vki -TERM /var/lib/dpkg/lock /var/lib/dpkg/lock-frontend
+ 1082  sudo dpkg --configure --pending
+ 1083  ps aux | grep -i apt
+ 1084  sudo kill -9 8426
+ 1085  sudo kill -9 8912
+ 1086  sudo kill -9 716
+ 1087  sudo killall apt apt-get
+ 1088  sudo apt update && apt upgrade --yes
+ 1089  sudo -i
+ 1090  python3 -m venv firstele
+ 1091  source firstele/bin/activate
+ 1092  ls
+ 1093  docker pull influxdb
+ 1094  sudo docker pull influxdb
+ 1095  apt install docker.io --yes
+ 1096  sudo apt install docker.io --yes
+ 1097  docker pull influxdb
+ 1098  sudo docker pull influxdb
+ 1099  docker pull telegraf
+ 1100  sudo docker pull telegraf
+ 1101  sudo dpkg --remove-architecture i386
+ 1102  dpkg --print-foreign-architectures
+ 1103  dpkg --print-architecture 
+ 1104  sudo dpkg --remove-architecture i386
+ 1105  sudo -s
+ 1106  history 
+ 1107  docker pull influxdb
+ 1108  sudo docker pull influxdb
+ 1109  sudo docker pull telegraf
+ 1110  docker run --detach --net=host influxdb
+ 1111  sudo docker run --detach --net=host influxdb
+ 1112  sudo docker run telegraf
+ 1113  mkdri /etc/telegraf/telegraf.conf
+ 1114  mkdri /etc/telegraf
+ 1115  cd /etc/
+ 1116  mkdir telegraf
+ 1117  sudo mkdir telegraf
+ 1118  cd telegraf/
+ 1119  touch telegraf.conf
+ 1120  sudo touch telegraf.conf
+ 1121  cd 
+ 1122  sudo docker run telegraf
+ 1123  cd /etc/
+ 1124  ls
+ 1125  cd telegraf/
+ 1126  ls
+ 1127  cd ..
+ 1128  rm -fr telegraf/
+ 1129  sudo rm -fr telegraf/
+ 1130  ls
+ 1131  cd ..
+ 1132  cd
+ 1133  sudo docker run telegraf
+ 1134  apt install telegraf
+ 1135  sudo apt install telegraf
+ 1136  ping 8.8.8.8
+ 1137  ping 192.168.2.25
+ 1138  ping 8.8.8.8
+ 1139  ping google.com
+ 1140  ping 192.168.2.25
+ 1141  ping google.com
+ 1142  ping 8.8.8.8
+ 1143  ping 8.8.4.4
+ 1144  cat /etc/hosts
+ 1145  history 
+ 1146  sudo docker run --interactive telegraf --sample-config > telegraf.conf
+ 1147  sudo docker run --interactive telegraf --sample-config 
+ 1148  sudo docker run --interactive telegraf --sample-config > telegraf.conf
+ 1149  ls
+ 1150  ll
+ 1151  code telegraf.conf 
+ 1152  sudo docker run --interactive telegraf --help
+ 1153  sudo docker run --interactive --tty --mount="source=/root/telegraf.conf,target=/telegraf.conf,type=bind" telegraf --config /telegraf.conf
+ 1154  sudo docker run --interactive --tty --mount="source=/root/telegraf.conf,target=/telegraf.conf" telegraf --config /telegraf.conf
+ 1155  sudo docker run --net=host --interactive --tty --mount="source=/root/telegraf.conf,target=/telegraf.conf,type=bind" telegraf --config /telegraf.conf
+ 1156  docker ps -a
+ 1157  sudo docker ps -a
+ 1158  docker container prune
+ 1159  sudo docker container prune
+ 1160  sudo docker ps -a
+ 1161  docker run --rm --net=host telegraf --config /telgraf.conf
+ 1162  sudo docker run --rm --net=host telegraf --config /telgraf.conf
+ 1163  ls
+ 1164  sudo docker run --rm --net=host --tty telegraf --config /telgraf.conf
+ 1165  sudo docker ps -a
+ 1166  sudo docker run telegraf --config 
+ 1167  sudo docker run telegraf --config /telegraf.conf
+ 1168  sudo docker ps -a
+ 1169  sudo docker container prune --help
+ 1170  sudo docker container prune --filter 16d
+ 1171  sudo docker container prune 16d
+ 1172  sudo docker container --he
+ 1173  sudo docker ps -a
+ 1174  sudo docker container kill 16d
+ 1175  sudo docker run telegraf --sample-config > telegraf.conf
+ 1176  sudo docker run telegraf
+ 1177  cp telegraf.conf /etc/telegraf/
+ 1178  docker ps -a
+ 1179  sudo docker ps -a
+ 1180  sudo docker run --rm --net=host --tty telegraf --config /telgraf.conf
+ 1181  export INFLUX_TOKEN=zTbBeruXJlb-Bk1H3XTtOVaf-nZrTTpKdpFuMkiqXTRUSCXO-BHx2pjOgMz5M7eOGiVONMDPXPOcK5avTHgE8w==
+ 1182  telegraf --config http://0.0.0.0:8086/api/v2/telegrafs/0bdb50ad18bb8000
+ 1183  export INFLUX_TOKEN=zTbBeruXJlb-Bk1H3XTtOVaf-nZrTTpKdpFuMkiqXTRUSCXO-BHx2pjOgMz5M7eOGiVONMDPXPOcK5avTHgE8w==
+ 1184  export INFLUX_TOKEN=6BQe4f7DYZi4-2rnDiMPEk2GM-SD6gvjOmQ7xGU3YZKUAabGdLbAtjZqDTR-X3VF3p3BuEgMd-D0sm5X11D17w==
+ 1185  telegraf --config http://0.0.0.0:8086/api/v2/telegrafs/0bdb50ad18bb8000
+ 1186  sudo docker ps -a
+ 1187  sudo docker stop --help
+ 1188  history 
+ 1189  sudo docker container prune
+ 1190  sudo docker ps -a
+ 1191  export INFLUX_TOKEN=6BQe4f7DYZi4-2rnDiMPEk2GM-SD6gvjOmQ7xGU3YZKUAabGdLbAtjZqDTR-X3VF3p3BuEgMd-D0sm5X11D17w==
+ 1192  telegraf --config http://0.0.0.0:8086/api/v2/telegrafs/0bdb50ad18bb8000
+ 1193  export INFLUX_TOKEN=UwA1ovVO98UV_9lBbpXiaEM337P8OnIXS5wCPbDwaY_XKd4_E9tnqpv0UOlBG_h05bIYoBMYSai4JuuaypHnHA==
+ 1194  telegraf --config http://0.0.0.0:8086/api/v2/telegrafs/0bdb50ad18bb8000
+ 1195  sudo docker container prune
+ 1196  export INFLUX_TOKEN=UwA1ovVO98UV_9lBbpXiaEM337P8OnIXS5wCPbDwaY_XKd4_E9tnqpv0UOlBG_h05bIYoBMYSai4JuuaypHnHA==
+ 1197  telegraf --config http://0.0.0.0:8086/api/v2/telegrafs/0bdb50ad18bb8000
+ 1198  export INFLUX_TOKEN=yhNRn5xx93f6BL61BUGY8md9WpBQvWneveJKggvxu1ohGJGYh4GOREbhyuAZSmLElKWRTHk-cBGJ3Qe4Wmpqhg==
+ 1199  telegraf --config http://0.0.0.0:8086/api/v2/telegrafs/0bdb52ede97b8000
+ 1200  sudo docker container prune
+ 1201  sudo docker ps -a
+ 1202  code telegraf.conf 
+ 1203  export INFLUX_TOKEN=5sFA-U0AiBchnRrZ0dMopIjQNVny2phZwHpoe51jRsCNl4iJF0UgnPJQUXvBJ8Q6fMghck6fv5sA_DjAGXk_bw==
+ 1204  telegraf --config http://0.0.0.0:8086/api/v2/telegrafs/0bdb571a55fb8000
+ 1205  history 
+ 1206  history > myhist.txt
+ 1207  cat myhist.txt 
+ 1208  cd CodeSamples/
+ 1209  ls
+ 1210  python3 workoutbook.py 
+ 1211  cat /var/log/nginx/access.log
+ 1212  python3 workoutbook.py 
+ 1213  pwd
+ 1214  python3 workoutbook.py 
+ 1215  python3 workoutbook.py #
+ 1216  python3 workoutbook.py 
+ 1217  cd
+ 1218  ip addr
+ 1219  cd /tmp/
+ 1220  ls
+ 1221  docker images
+ 1222  sudo docker images
+ 1223  docker load -i mfarhadis1.tar 
+ 1224  sudo docker load -i mfarhadis1.tar 
+ 1225  ls
+ 1226  sudo docker images
+ 1227  docker run --interactive --tty --entrypoint /bin/bash mehdfarhad:latest
+ 1228  sudo docker run --interactive --tty --entrypoint /bin/bash mehdfarhad:latest
+ 1229  docker images
+ 1230  sudo docker images
+ 1231  docker rmi mehdfarhad
+ 1232  sudo docker rmi mehdfarhad
+ 1233  sudo docker rmi -f mehdfarhad
+ 1234  sudo docker images
+ 1235  docker pull mehdifarhadi/influxdb:latest
+ 1236  sudo docker pull mehdifarhadi/influxdb:latest
+ 1237  docker images 
+ 1238  sudo docker images 
+ 1239  docker run --interactive --tty --entrypoint /bin/bash mehdifarhadi/influxdb:latest
+ 1240  sudo docker run --interactive --tty --entrypoint /bin/bash mehdifarhadi/influxdb:latest
+ 1241  docker images
+ 1242  sudo docker images
+ 1243  docker rmi -f mehdifarhadi/influxdb
+ 1244  sudo docker rmi -f mehdifarhadi/influxdb
+ 1245  history 
+ 1246  sudo docker images
+ 1247  sudo docker pull mehdifarhadi/influxdb:09.10
+ 1248  sudo docker images
+ 1249  ls
+ 1250  sudo docker run --interactive --tty --entrypoint /bin/bash mehdifarhadi/influxdb:09.10
+ 1251  cd
+ 1252  ls
+ 1253  git clone https://github.com/Mehdi487/JenkinsPipeline.git
+ 1254  cd JenkinsPipeline/
+ 1255  git config --global user.name "Test-IQ"
+ 1256  git config --global user.email "queenofuk89@gmail.com"
+ 1257  git config --global credential.helper 'cache --timeout=604800'
+ 1258  ls
+ 1259  git branch
+ 1260  git checkout test
+ 1261  git branch
+ 1262  cd host_vars/
+ 1263  ls
+ 1264  nano csr23.yaml 
+ 1265  cd ..
+ 1266  git add host_vars/csr23.yaml 
+ 1267  git commit -m "change - add new interface" host_vars/csr23.yaml 
+ 1268  git push -u origin test
+ 1269  history 
+ 1270  git config --global user.name "Test-IQ"
+ 1271  git config --global user.email "queenofuk89@gmail.com"
+ 1272  git config --global credential.helper 'cache --timeout=604800'
+ 1273  ls
+ 1274  git branch 
+ 1275  git checkout main
+ 1276  git branch 
+ 1277  git checkout test 
+ 1278  cd host_vars/
+ 1279  nano csr63.yaml 
+ 1280  cd ..
+ 1281  git add host_vars/csr63.yaml 
+ 1282  git commit -m "change - add new intf to csr63" host_vars/csr63.yaml 
+ 1283  git push -u origin test 
+ 1284  ls
+ 1285  git pull
+ 1286  git branch 
+ 1287  cd host_vars/
+ 1288  ls
+ 1289  nano csr63.yaml 
+ 1290  nano csr23.yaml 
+ 1291  nano csr63.yaml 
+ 1292  nano csr23.yaml
+ 1293  git add csr23.yaml 
+ 1294  git add csr63.yaml
+ 1295  git commit -m "change- add intf .65 to csr23&csr63"
+ 1296  git commit -m "change- add intf .65 to csr23&csr63" csr23.yaml csr63.yaml 
+ 1297  git push -u origin test 
+ 1298  cat csr23.yaml 
+ 1299  nano csr23.yaml 
+ 1300  git add csr23.yaml 
+ 1301  git commit -m "change- add intf .65 to csr23&csr63" csr23.yaml 
+ 1302  git push -u origin test 
+ 1303  history 
+ 1304  cd
+ 1305  ls
+ 1306  cd JenkinsPipeline/
+ 1307  ls
+ 1308  cd host_vars/
+ 1309  cat ho
+ 1310  ls
+ 1311  cat csr
+ 1312  cat csr23.yaml 
+ 1313  cd ..
+ 1314  cd host_vars/
+ 1315  nano csr63.yaml 
+ 1316  cd ..
+ 1317  ls
+ 1318  rm -r JenkinsPipeline/
+ 1319  rm -rf JenkinsPipeline/
+ 1320  history 
+ 1321  ls
+ 1322  git clone https://github.com/Mehdi487/JenkinsPipeline.git
+ 1323  cd JenkinsPipeline/
+ 1324  ls
+ 1325  git branch 
+ 1326  git config --global user.name "Test-IQ"
+ 1327  git config --global user.email "queenofuk89@gmail.com"
+ 1328  git config --global credential.helper 'cache --timeout=604800'
+ 1329  git branch 
+ 1330  git pull
+ 1331  git branch 
+ 1332  git config --global user.name "Test-IQ"
+ 1333  git config --global user.email "queenofuk89@gmail.com"
+ 1334  cd ..
+ 1335  cd JenkinsPipeline/
+ 1336  ls
+ 1337  git branch 
+ 1338  git checkout test
+ 1339  git branch 
+ 1340  git branch -r
+ 1341  git config --global user.name "Test-IQ"
+ 1342  git config --global user.email "queenofuk89@gmail.com"
+ 1343  git config --global credential.helper 'cache --timeout=604800'
+ 1344  git branch 
+ 1345  cd host_vars/
+ 1346  ls
+ 1347  nano csr23.yaml 
+ 1348  cd ..
+ 1349  git add host_vars/csr23.yaml 
+ 1350  git commit -m "change csr23 add 67" host_vars/csr23.yaml 
+ 1351  git push -u origin test
+ 1352  git config --global user.name "Test-IQ"
+ 1353  git config --global user.email "queenofuk89@gmail.com"
+ 1354  git config --global credential.helper 'cache --timeout=604800'
+ 1355  git branch 
+ 1356  git add host_vars/csr23.yaml 
+ 1357  git commit -m "change csr23 add 67" host_vars/csr23.yaml 
+ 1358  git push -u origin test 
+ 1359  git pull 
+ 1360  git branch 
+ 1361  ls
+ 1362  cd host_vars/
+ 1363  ls
+ 1364  nano csr23.yaml 
+ 1365  git add csr23.yaml 
+ 1366  git commit -m "change the intf csr23 68" csr23.yaml 
+ 1367  git push -u origin test 
+ 1368  nano csr23.yaml 
+ 1369  git add csr23.yaml 
+ 1370  git commit -m "change the intf csr23 68" csr23.yaml 
+ 1371  git push -u origin test 
+ 1372  cd
+ 1373  cd au
+ 1374  cd JenkinsPipeline/
+ 1375  ls
+ 1376  cd ..
+ 1377  cd JenkinsPipeline/
+ 1378  git commit -m "change the intf csr23 68" csr23.yaml 
+ 1379  git commit -m "change the intf csr23 68" host_vars/csr23.yaml 
+ 1380  git pull 
+ 1381  cd ..
+ 1382  s
+ 1383  ls
+ 1384  cd JenkinsPipeline/
+ 1385  ls
+ 1386  git pu
+ 1387  git pull 
+ 1388  git branch 
+ 1389  history 
+ 1390  c dho
+ 1391  cd host_vars/
+ 1392  ls
+ 1393  cat csr23.yaml 
+ 1394  nano csr23.yaml 
+ 1395  git add csr23.yaml 
+ 1396  git commit -m "updated ospf interfaces csr23" csr23.yaml 
+ 1397  git push -u origin test 
+ 1398  cat csr23.yaml 
+ 1399  cd ..
+ 1400  cd au
+ 1401  cd JenkinsPipeline/
+ 1402  cd host_vars/
+ 1403  cat csr23.yaml 
+ 1404  history 
+ 1405  cat csr23.yaml 
+ 1406  ls
+ 1407  cat csr23.yaml 
+ 1408  cat csr63.yaml 
+ 1409  nano csr63.yaml 
+ 1410  git add csr63.yaml 
+ 1411  git commit -m "updated ospf interfaces csr23" csr63.yaml 
+ 1412  git push -u origin test 
+ 1413  ls
+ 1414  cd ...
+ 1415  cd ..
+ 1416  ls
+ 1417  cd ..
+ 1418  history 
+ 1419  ls
+ 1420  cd JenkinsPipeline/
+ 1421  cd host_vars/
+ 1422  cat csr23.yaml 
+ 1423  cd ..
+ 1424  git config --global user.name "Test-IQ"
+ 1425  git config --global user.email "queenofuk89@gmail.com"
+ 1426  git config --global credential.helper 'cache --timeout=604800'
+ 1427  git branch 
+ 1428  git checkout main 
+ 1429  git config --global user.name "Test-IQ"
+ 1430  git config --global user.email "queenofuk89@gmail.com"
+ 1431  git config --global credential.helper 'cache --timeout=604800'
+ 1432  cd host_vars/
+ 1433  exit 
+ 1434  history 
+ 1435  git branch 
+ 1436  cd JenkinsPipeline/
+ 1437  git branch 
+ 1438  git checkout test 
+ 1439  cat host_vars/csr23.yaml 
+ 1440  cat host_vars/csr63.yaml 
+ 1441  git checkout main 
+ 1442  cat host_vars/csr63.yaml 
+ 1443  cat host_vars/csr23.yaml 
+ 1444  git checkout test 
+ 1445  cs host_vars/
+ 1446  cd host_vars/
+ 1447  nano csr23.yaml 
+ 1448  nano csr63.yaml 
+ 1449  cat csr23.yaml 
+ 1450  git branch 
+ 1451  git add csr23.yaml csr63.yaml 
+ 1452  git commit -m "updated ospf interfaces csr23 63" csr23.yaml csr63.yaml 
+ 1453  git push -u origin test
+ 1454  cd
+ 1455  cd JenkinsPipeline/
+ 1456  git pull origin 
+ 1457  cd host_vars/
+ 1458  cat csr23.yaml 
+ 1459  cat csr63.yaml 
+ 1460  git branch 
+ 1461  git branch main 
+ 1462  git checkout main 
+ 1463  cat csr63.yaml 
+ 1464  cd ..
+ 1465  git pull origin main 
+ 1466  cd host_vars/
+ 1467  cat csr23.yaml 
+ 1468  cat csr63.yaml 
+ 1469  nano csr63.yaml 
+ 1470  git branch 
+ 1471  cd
+ 1472  docker images 
+ 1473  sudo docker images 
+ 1474  docker rmi -f 07c7a9356245
+ 1475  git credential-cache exit
+ 1476  cd JenkinsPipeline/
+ 1477  cd ..
+ 1478  ls
+ 1479  cd JenkinsPipeline/
+ 1480  ls
+ 1481  cd ..
+ 1482  cat 
+ 1483  ll
+ 1484  ls
+ 1485  cdd JenkinsPipeline/
+ 1486  cd JenkinsPipeline/
+ 1487  ls
+ 1488  cp buildcicd.txt ../
+ 1489  cd ..
+ 1490  ls
+ 1491  whoami
+ 1492  rm -rf JenkinsPipeline/
+ 1493  git clone https://github.com/Mehdi487/JenkinsPipeline.git
+ 1494  cd JenkinsPipeline/
+ 1495  ls
+ 1496  cat host_vars/csr23.yaml 
+ 1497  git config --global user.name "Test-IQ"
+ 1498  git config --global user.email "queenofuk89@gmail.com"
+ 1499  git config --global credential.helper 'cache --timeout=604800'
+ 1500  ls
+ 1501  git branch 
+ 1502  git checkout test
+ 1503  cd host_vars/
+ 1504  nano csr63.yaml 
+ 1505  cd ..
+ 1506  git add host_vars/csr63.yaml
+ 1507  git commit -m "changed - csr63- intf 90" host_vars/csr63.yaml
+ 1508  git push -u origin test 
+ 1509  cd host_vars/
+ 1510  cat csr63.yaml 
+ 1511  cd ..
+ 1512  git pull 
+ 1513  git branch 
+ 1514  cd host_vars/
+ 1515  nano csr63.yaml 
+ 1516  git add csr63.yaml 
+ 1517  git commit -m "changed - csr63- intf 90-99" csr63.yaml 
+ 1518  git push -u origin test
+ 1519  cat csr63.yaml 
+ 1520  cd 
+ 1521  ls
+ 1522  history > testandprodhistory.txt
+ 1523  ip addr
+ 1524  sudo cat /etc/gitlab/initial_root_password 
+ 1525  ip addr
+ 1526  sudo apt update
+ 1527  sudo apt intall -y curl openssh-server ca-certificates tzdata perl
+ 1528  sudo apt-get intall -y curl openssh-server ca-certificates tzdata perl
+ 1529  sudo apt-get install -y curl openssh-server ca-certificates tzdata perl
+ 1530  cd /tmp/
+ 1531  curl -LO https://packages.gitlab.com/install/repositories/gitlab/gitlab-ee/script.deb.sh
+ 1532  sudo bash /tmp/script.deb.sh 
+ 1533  cd 
+ 1534  sudo apt install gitlab-ee
+ 1535  sudo nano /etc/gitlab/gitlab.rb 
+ 1536  sudo gitlab-ctl reconfigure 
+ 1537  cat /etc/hosts
+ 1538  nano /etc/hosts
+ 1539  sudo nano /etc/hosts
+ 1540  ifconfig
+ 1541  sudo nano /etc/hosts
+ 1542  ping puppet
+ 1543  ip a
+ 1544  ping 172.16.0.1
+ 1545  ping 192.168.2.110
+ 1546  ping 192.168.2.16
+ 1547  ip addr
+ 1548  ping 192.168.2.16
+ 1549  ping 8.8.8.8
+ 1550  ping 192.168.2.16
+ 1551  tracepath 8.8.8.8
+ 1552  ip a
+ 1553  history 
+ 1554  docker ps
+ 1555  sudo docker ps
+ 1556  l
+ 1557  s
+ 1558  cd JenkinsPipeline/
+ 1559  ls
+ 1560  history 
+ 1561  ls
+ 1562  cd ..
+ 1563  sudo systemctl status jenkins
+ 1564  ls
+ 1565  cd JenkinsPipeline/
+ 1566  ls
+ 1567  ll
+ 1568  git brnch -r
+ 1569  git branch -r
+ 1570  git config -list
+ 1571  git config --list
+ 1572  git config --global credential.helper 'cache --timeout=604800'
+ 1573  git branch
+ 1574  git checkout test 
+ 1575  cd host_vars/
+ 1576  ls
+ 1577  cat csr23.yaml 
+ 1578  sudo nano csr23.yaml 
+ 1579  cd ..
+ 1580  git add host_vars/csr23.yaml
+ 1581  git commit -m " change 2011" host_vars/csr23.yaml
+ 1582  git push origin -u test 
+ 1583  cd host_vars/
+ 1584  cat csr23.yaml 
+ 1585  sudo nano csr23.yaml 
+ 1586  cd ..
+ 1587  git add host_vars/csr23.yaml
+ 1588  git commit -m " change 2011" host_vars/csr23.yaml
+ 1589  git push origin -u test 
+ 1590  cat csr23.yaml 
+ 1591  cd host_vars/
+ 1592  ls
+ 1593  cat csr23.yaml 
+ 1594  sudo nano csr23.yaml 
+ 1595  cd ..
+ 1596  git add host_vars/csr23.yaml
+ 1597  git commit -m " change 2011-733" host_vars/csr23.yaml
+ 1598  git push origin -u test 
+ 1599  ping 8.8.8.8
+ 1600  git push origin -u test 
+ 1601  ls
+ 1602  cd JenkinsPipeline/
+ 1603  ls
+ 1604  git config --list
+ 1605  git branch -r
+ 1606* git checkout 
+ 1607  git branch 
+ 1608  cd host_vars/
+ 1609  ls
+ 1610  cat csr23.yaml 
+ 1611  sudo nano csr23.yaml 
+ 1612  cd ..
+ 1613  git add host_vars/csr23.yaml
+ 1614  git commit -m "this is 88 test" host_vars/csr23.yaml 
+ 1615  git push -u origin test 
+ 1616  git pul
+ 1617  git pull 
+ 1618  cd host_vars/
+ 1619  sudo nano csr23.yaml 
+ 1620  git add host_vars/csr23.yaml
+ 1621  git add csr23.yaml csr23.yaml 
+ 1622  git add csr23.yaml
+ 1623  git commit -m "this is 88 test" host_vars/csr23.yaml 
+ 1624  git commit -m "this is 88 update" csr23.yaml 
+ 1625  git push -u origin test 
+ 1626  history 
+ 1627  history > test2011-w1.txt
