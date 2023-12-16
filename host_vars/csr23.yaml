@@ -15,3 +15,6 @@ OSPF:
 >>>>>>> 3523eaea1f9ecbdfb2dc9d62afa0fadeee40909f
     pid: "1"
     area: "0"
+  - interface: "GigabitEthernet3.9111"
+    pid: "1"
+    area: "0"
